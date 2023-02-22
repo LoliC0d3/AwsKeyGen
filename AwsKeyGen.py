@@ -62,7 +62,9 @@ for i in range(x):
         # print("aws_access_key_id=" + aws_id())
         # print("aws_secret_access_key=" + aws_key())
         # print("region=" + str(shuffle(region[0:-20])))
-        print ('AKIA'+aws_id()+ '|' + aws_key() + '|' + aws_region() )
+        res = 'AKIA'+aws_id()+ '|' + aws_key() + '|' + aws_region()
+        print(res)
+        open('Result.txt','a').write(str(res) + '\n')
 
     print_key()
     # print (*region, sep=",")
